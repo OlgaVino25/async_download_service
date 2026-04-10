@@ -1,0 +1,47 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*.pyd
+*.so
+*.egg-info/
+*.egg
+build/
+dist/
+wheels/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Environment variables (if you store secrets)
+.env
+.env.local
+
+# Project-specific (optional)
+# If you ever add any local config files:
+# config.local.py
+# settings_local.py
+
+# Archive files created during testing (optional)
+*.zip
+*.tar.gz
+*.7z
