@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  archive-service:
+    image: your-dockerhub/archive-service:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - /opt/photos:/app/photos
+    environment:
+      - PHOTOS_DIR=/app/photos
+      - LOG_LEVEL=WARNING
+      - CHUNK_DELAY=0
+    restart: unless-stopped
