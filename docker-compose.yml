@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  archive-service:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./photos:/app/photos
+      - ./server.py:/app/server.py
+      - ./index.html:/app/index.html
+    environment:
+      - PHOTOS_DIR=/app/photos
+      - LOG_LEVEL=DEBUG
+      - CHUNK_DELAY=0
